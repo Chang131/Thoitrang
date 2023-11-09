@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient( 45deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 50%, rgb(255, 204, 112) 100% ); ;
+    /*Muốn dùng liner-gradient thì chỉ dùng background ko dùng background-color*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /*Em cho thằng body làm cha của cả hai thằng
+    thằng modal thì là con thứ 2 nên bị ẩn đi
+    thằng modal-btn là con thứ 1 nên hiện trc.
+    Em kick hay kiểu em đấm thằng modal-btn đi thì mặt thằng modal được ló ra*/
+}
+#modal-btn {
+    width: 150px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 16px;
+    position: absolute;
+}
+#modal-btn:hover {
+    background-color: #c2c0c2;
+    transition: 0.25s;
+}
+#modal {
+    width: 350px;
+    height: 160px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 5px;
+    display: none; /*Phải ẩn thằng modal đi đã ạ. Vì ban đầu em chỉ có nút bấm thui */
+    position: absolute;
+}
+#header {
+    width: 100%;
+    height: 40px;
+    background-color:rgb(230, 129, 129);
+    border-top-right-radius:5px;
+}
+ h1  {
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: inline; /*Sử dụng để loại bỏ thuộc tính display:block có sẵn của thẻ h1 như vậy giúp trái tim gần
+    với cả thẻ h1*/
+}
+i {
+    color: #fff;
+    margin-left: 165px;
+    cursor: pointer;
+}
+h2 {
+    font-size: 20px;
+    color:rgb(230, 129, 129) ;
+    margin: 10px;
+}
+p {
+    margin-left: 10px;
+}
+
+#close {
+    width: 55px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(230, 129, 129);
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 80%;
+    cursor: pointer;
+}
